@@ -1,0 +1,177 @@
+
+body{
+  font-family: courier,"Roboto", sans-serif;
+}
+/* NAV SECTION */
+.navbar{
+  padding: 0;
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.00)0%, rgba(0,0,0,0.22) 90%);
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
+.navbar-brand{
+  padding: 0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgb(45,104,233);
+  font-size: 20px;
+  letter-spacing: 4px;
+  font-weight: 300;
+}
+
+.navbar-collapse{
+  padding: 10px 15px;
+}
+
+@media (min-width: 992px) {
+  .navbar-collapse{
+    padding: 0;
+  }
+}
+
+/* END OF NAV SECTION */
+
+/*HERO SECTION  */
+.hero{
+  width: 100%;
+  height: 875px;
+  background-image: linear-gradient( to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.4) 100% ), url(../img/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.btn-primary{
+  font-family: "Roboto",Helvetica, sans-serif;
+  font-size: 18px;
+  letter-spacing: 4.5px;
+  background: #BF0000;
+  color: white;
+  border:none;
+  outline:none;
+  padding: 12px 22px;
+  transition: all 0.3s ease;
+  border-radius: 0;
+}
+
+.btn-primary:hover{
+  background: #A3171B;
+}
+
+.btn-primary:active{
+  box-shadow: inset 0px 8px 4px rgba(0,0,0,0.25);
+  background: #A3171B!important;
+  box-shadow: none!important;
+}
+
+.btn-primary:focus{
+  box-shadow: inset 0px 8px 4px rgba(0,0,0,0.25);
+  background: #A3171B;
+  box-shadow: none;
+}
+/* END OF HERO SECTION */
+
+/*  BLOG SECTION */
+
+.btn-outline-primary{
+  color: #BF0000;
+  background-color: transparent;
+  background-image: none;
+  border-color: #BF0000;
+}
+
+.btn-outline-primary:hover{
+  background: #A3171B;
+  border-color: #A3171B;
+}
+
+.btn-outline-primary:active{
+  box-shadow: inset 0px 8px 4px rgba(0,0,0,0.25);
+  background: #A3171B!important;
+  box-shadow: none!important;
+  outline: none;
+  border-color: #A3171B!important;
+}
+
+.btn-outline-primary:focus{
+  box-shadow: inset 0px 8px 4px rgba(0,0,0,0.25);
+  background: #A3171B;
+  box-shadow: none;
+  outline: none;
+}
+
+.card{
+  border: none;
+}
+
+/* END OF BLOG SECTION */
+
+/* ABOUT SECTION */
+
+.about{
+  background-image: linear-gradient( to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.8) 80% ), url(../img/about-me-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.about h1.display-5::after{
+  content: "";
+  display: block;
+  background: #BF0000;
+  width: 120px;
+  height: 2px;
+  margin-top: 30px;
+}
+
+/* END OF ABOUT SECTION  */
+
+/* INSTAFEED SECTION - image imported from instagram */
+#instafeed{
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  overflow: hidden;
+  background: black;
+}
+#instafeed a {
+  flex-grow: 1;
+  opacity: 0.3;
+  transition: opacity 0.6 ease;
+}
+#instafeed a:hover{
+  opacity: 1;
+}
+
+/* Tablet Style */
+@media only screen and (max-width: 1024px) {
+  #instafeed a img{
+    width: 300px;
+  }
+}
+/* Large Mobile Style */
+@media screen and (max-width: 768px) {
+  #instafeed a img{
+    width: 200px;
+  }
+}
+/* Small Mobile Style */
+@media screen and (max-width: 400px) {
+  #instafeed a img{
+    width: 100px;
+  }
+}
+
+/* END OF INSTAFEED */
+
+/* FOOTER */
+
+footer{
+  background: #000;
+
+}
+
+/* END OF FOOTER  */
